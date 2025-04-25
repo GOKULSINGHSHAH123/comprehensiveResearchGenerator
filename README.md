@@ -1,22 +1,46 @@
-# Multi-Agent Research Report Writing System
+# Multi-Agent Research Report Writer 🤖📝
 
-[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)]()
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![LangChain Integration](https://img.shields.io/badge/LangChain-0.1.0-green)]()
-[![Gradio Interface](https://img.shields.io/badge/Interface-Gradio-FF4B4B)]()
 
-An AI-powered system that collaboratively writes research reports using multiple specialized agents through planning, research, generation, and iterative refinement.
-
-## ✨ Features
-
-- **Multi-Agent Architecture**: Four specialized agents (Planner, Researcher, Writer, Editor) working in sequence
-- **Iterative Refinement**: Up to 5 revision cycles with automated quality checks
-- **Web Research Integration**: Real-time data gathering using Tavily Search API
-- **Quality Control**: Automated reflection/critique system for continuous improvement
-- **User-Friendly Interface**: Gradio web interface for interactive report generation
+An AI system that collaboratively writes research reports using planner, researcher, writer, and critique agents through iterative refinement.
 
 ## 🚀 Quick Start
 
-### Prerequisites
 ```bash
+# Install dependencies
 pip install langchain langgraph tavily-python gradio google-generativeai
+
+# Set API keys (replace with yours)
+export TAVILY_API_KEY='tvly-xxxxxxxx'
+export GOOGLE_API_KEY='AIzaSyxxxxxxx'
+```
+
+ Features
+4 specialized AI agents working in sequence
+
+Automated quality control with revision cycles
+
+Real-time web research integration
+
+Gradio web interface
+
+![image](https://github.com/user-attachments/assets/16359205-8927-4ec8-af1a-e523a83774e9)
+
+
+🧩 Components
+Agent	Function	Tech Used
+Planner	Creates outline	Gemini-1.5 Pro
+Researcher	Web research	Tavily API
+Writer	Draft generation	Custom Prompts
+Critique	Quality feedback	Reflection System
+
+
+1. Executive Summary
+2. Introduction
+3. Recent Advancements
+4. Technology Integration
+5. Security Challenges
+6. Case Studies
+7. Future Directions
+8. References
